@@ -1,7 +1,7 @@
 # SBT Multi Module Example
 
 [sbt scalariform](https://github.com/sbt/sbt-scalariform) is reformatting multiple times same files. In my opinion which is unnecessary, is there way to 
-tell scalariform not to do multiple times.
+tell scalariform not to do multiple times?
 
 # How to run?
 
