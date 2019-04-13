@@ -1,0 +1,13 @@
+# Idea related
+.idea/
+*.iml
+
+# Build releated
+target/
+*.class
+
+# My styles
+*.bkp
+*.back
+*.log
+
