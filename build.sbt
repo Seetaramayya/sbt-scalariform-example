@@ -21,6 +21,10 @@ lazy val main = project
 
 lazy val root = (project in file("."))
   .aggregate(module1, module2, main)
+  .settings(
+    scalariformWithBaseDirectory := true,
+    scalariformFormat / includeFilter := "*.scala" || "*.sbt"
+  )
 
 lazy val commonSettings = Seq(
   organization := "com.seeta",
@@ -28,7 +32,7 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.12.0",
   publishMavenStyle := true,
   publishArtifact in Test := false,
-  scalariformFormat / includeFilter := "*.scala" || "*.sbt"
+  scalariformFormat / includeFilter := "*.scala"
 )
 
 lazy val testSettings = Seq(
